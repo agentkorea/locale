@@ -40,6 +40,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+bower_components
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -67,6 +68,7 @@ web_modules/
 
 # dotenv environment variable files
 .env
+.env~
 .env.*
 !.env.example
 
@@ -119,11 +121,20 @@ dist
 # Firebase cache directory
 .firebase/
 
+# Docker folder to help skip auth refreshes
+.docker
+bundle
+
 # TernJS port file
 .tern-port
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+# Editors
+.vscode
+.idea
+*.iml
 
 # pnpm
 .pnpm-store
@@ -141,3 +152,10 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Generated files
+package-lock.json
