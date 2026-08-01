@@ -36,8 +36,8 @@ LANGUAGES.forEach(lang => {
 });
 
 // 스캔 대상 루트 (프로젝트 루트 기준 sample 폴더)
-const SAMPLE_DIR: string = '../../agentkorea';
-const TARGET_PROJECT: string = 'target_project';  
+const SAMPLE_DIR: string = '../locale';
+const TARGET_PROJECT: string = 'src';  
 const SCAN_ROOT_DIR: string = `${SAMPLE_DIR}/${TARGET_PROJECT}`;
 
 // 제외할 항목들을 통합 관리
