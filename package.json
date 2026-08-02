@@ -1,5 +1,5 @@
 {
-  "name": "locale",
+  "name": "@agentko/locale",
   "version": "0.0.1",
   "bin": {
     "locale": "./bundle/cli.js"
@@ -8,11 +8,26 @@
     "start": "tsx src/generateStringsJson.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "strings": "tsx src/generateStringsJson.ts",
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "prepublishOnly": "npm run build",
+    "prepack": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "description": "",
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "locale",
+    "translation",
+    "strings",
+    "json"
+  ],
+  "author": "BongGwan Kim",
+  "description": "This code adds internationalization (i18n) support to the source code. For more information, please visit the dedicated locale repository (https://gitlab.com/agentkorea/locale).",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agentkorea/locale"
+  },
+  "homepage": "https://github.com/agentkorea/locale#readme",
   "dependencies": {
     "@octokit/rest": "^22.0.0",
     "dotenv": "^17.2.1"
@@ -30,7 +45,6 @@
   },
   "files": [
     "bundle/",
-    "bin/",
     "README.md",
     "LICENSE"
   ]

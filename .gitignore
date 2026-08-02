@@ -123,7 +123,9 @@ dist
 
 # Docker folder to help skip auth refreshes
 .docker
-# bundle
+
+# Build output
+bundle/
 
 # TernJS port file
 .tern-port
@@ -157,5 +159,10 @@ vite.config.ts.timestamp-*
 .DS_Store
 Thumbs.db
 
-# Generated files
-package-lock.json
+# Secrets
+.npmrc
+
+# Test script
+checkScopeAccess.js
+
+lang/
